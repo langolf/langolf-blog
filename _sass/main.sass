@@ -1,0 +1,163 @@
+@import "normalize";
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-size: 100%;
+}
+
+body {
+    background: #fcfcfc;
+    font: 400 1.125rem/2rem 'Noto Serif', Georgia, serif;
+    letter-spacing: 0.01rem;
+    color: #444;
+    // text-shadow: 0 1px 0 #fff;
+}
+
+.main {
+  padding-top: 5rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.main_header {
+  margin: 0 0 4em 0;
+  h1 {
+    font-size: 3em;
+    line-height: 3rem;
+
+    a {
+      text-decoration: none;
+      color: #333;
+
+      &:hover {
+        text-decoration: underline;
+        color: #1879d3;
+      }
+    }
+  }
+}
+
+ul {
+  padding: 0;
+}
+
+p {
+  margin: 0 0 2rem 0;
+}
+
+a {
+  color: #1879d3;
+  transition: all .2s ease-out;
+
+  &:hover {
+    color: darken(#1879d3, 20%);
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fira Sans', Helvetica, sans-serif;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.6rem;
+  margin: 0 0 0.8rem 0;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #666;
+  margin: 0 0 2.2rem 0;
+}
+
+.tldr {
+  position: absolute;
+  top: 14em;
+  left: -16em;
+  font-size: 0.7em;
+  // font-style: italic;
+  line-height: 1.6em;
+  text-align: right;
+}
+
+h3 {
+  font-size: 1.4em;
+  margin: 0 0 0.5em 0;
+  .header-link {
+    color: #555;
+  }
+}
+
+.header-link {
+  position: absolute;
+  opacity: 0;
+  padding: 10px;
+  top: -10px;
+  transform: translateX(0);
+  transition: all 0.1s ease-out 0.1s;
+}
+
+h2, h3, h4,
+h5, h6 {
+  position: relative;
+  &:hover {
+    .header-link {
+      opacity: .7;
+      transform: translateX(-1.8em);
+    }
+  }
+}
+
+.main_post {
+  position: relative;
+}
+
+.main_posts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-posts_item {
+  .title {
+    font: 700 1.3em/2em 'Fira Sans', sans-serif;
+  }
+
+  .subtitle {
+    font: 400 1em/1em 'Fira Sans', sans-serif;
+  }
+}
+
+a[href*="fun-box"] {
+  display: inline-block;
+  &:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+    margin-left: .1em;
+    margin-right: .3em;
+    background: url(http://localhost:3000/img/funbox.svg) no-repeat;
+    background-size: 100%;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+  html {
+    font-size: 85%;
+  }
+}
