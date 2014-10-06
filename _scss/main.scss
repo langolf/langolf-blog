@@ -11,15 +11,11 @@ html {
 }
 
 body {
-    background: #fcfcfc;
+    background: #fff;
     font: 400 1.125rem/2rem 'Noto Serif', Georgia, serif;
     letter-spacing: 0.01rem;
     color: #444;
     // text-shadow: 0 1px 0 #fff;
-}
-
-.main {
-  padding-top: 5rem;
 }
 
 .container {
@@ -29,7 +25,8 @@ body {
   padding: 0 1rem;
 }
 
-.main_header {
+.page-header {
+  padding-top: 5rem;
   margin: 0 0 4em 0;
   h1 {
     font-size: 3em;
@@ -81,19 +78,28 @@ h2 {
   margin: 0 0 2.2rem 0;
 }
 
-.tldr {
-  position: absolute;
-  top: 14em;
-  left: -16em;
-  font-size: 0.7em;
-  // font-style: italic;
-  line-height: 1.6em;
-  text-align: right;
+.post-content {
+  padding-bottom: 10rem;
+  blockquote {
+    margin: 0;
+    position: absolute;
+    top: 14em;
+    font-weight: 400;
+    left: -16em;
+    font-size: 0.7em;
+    // font-style: italic;
+    line-height: 1.6em;
+    text-align: right;
+
+    p {
+      margin: 0;
+    }
+  }
 }
 
 h3 {
-  font-size: 1.4em;
-  margin: 0 0 0.5em 0;
+  font-size: 1.7rem;
+  margin: 2.9rem 0 1.4rem 0;
   .header-link {
     color: #555;
   }
@@ -119,17 +125,17 @@ h5, h6 {
   }
 }
 
-.main_post {
+.post {
   position: relative;
 }
 
-.main_posts {
+.post-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.main-posts_item {
+.post-list_item {
   .title {
     font: 700 1.3em/2em 'Fira Sans', sans-serif;
   }
@@ -149,7 +155,7 @@ a[href*="fun-box"] {
     top: -2px;
     margin-left: .1em;
     margin-right: .3em;
-    background: url(http://localhost:3000/img/funbox.svg) no-repeat;
+    background: url(/img/funbox.svg) no-repeat;
     background-size: 100%;
     width: 20px;
     height: 20px;

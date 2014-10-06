@@ -329,13 +329,10 @@ html {
   font-size: 100%; }
 
 body {
-  background: #fcfcfc;
+  background: #fff;
   font: 400 1.125rem/2rem 'Noto Serif', Georgia, serif;
   letter-spacing: 0.01rem;
   color: #444; }
-
-.main {
-  padding-top: 5rem; }
 
 .container {
   width: 100%;
@@ -343,15 +340,16 @@ body {
   margin: 0 auto;
   padding: 0 1rem; }
 
-.main_header {
+.page-header {
+  padding-top: 5rem;
   margin: 0 0 4em 0; }
-  .main_header h1 {
+  .page-header h1 {
     font-size: 3em;
     line-height: 3rem; }
-    .main_header h1 a {
+    .page-header h1 a {
       text-decoration: none;
       color: #333; }
-      .main_header h1 a:hover {
+      .page-header h1 a:hover {
         text-decoration: underline;
         color: #1879d3; }
 
@@ -382,17 +380,23 @@ h2 {
   color: #666;
   margin: 0 0 2.2rem 0; }
 
-.tldr {
-  position: absolute;
-  top: 14em;
-  left: -16em;
-  font-size: 0.7em;
-  line-height: 1.6em;
-  text-align: right; }
+.post-content {
+  padding-bottom: 10rem; }
+  .post-content blockquote {
+    margin: 0;
+    position: absolute;
+    top: 14em;
+    font-weight: 400;
+    left: -16em;
+    font-size: 0.7em;
+    line-height: 1.6em;
+    text-align: right; }
+    .post-content blockquote p {
+      margin: 0; }
 
 h3 {
-  font-size: 1.4em;
-  margin: 0 0 0.5em 0; }
+  font-size: 1.7rem;
+  margin: 2.9rem 0 1.4rem 0; }
   h3 .header-link {
     color: #555; }
 
@@ -415,17 +419,17 @@ h2, h3, h4, h5, h6 {
         -ms-transform: translateX(-1.8em);
             transform: translateX(-1.8em); }
 
-.main_post {
+.post {
   position: relative; }
 
-.main_posts {
+.post-list {
   list-style: none;
   padding: 0;
   margin: 0; }
 
-.main-posts_item .title {
+.post-list_item .title {
   font: 700 1.3em/2em 'Fira Sans', sans-serif; }
-.main-posts_item .subtitle {
+.post-list_item .subtitle {
   font: 400 1em/1em 'Fira Sans', sans-serif; }
 
 a[href*="fun-box"] {
@@ -438,7 +442,7 @@ a[href*="fun-box"] {
     top: -2px;
     margin-left: 0.1em;
     margin-right: 0.3em;
-    background: url(http://localhost:3000/img/funbox.svg) no-repeat;
+    background: url(/img/funbox.svg) no-repeat;
     background-size: 100%;
     width: 20px;
     height: 20px; }

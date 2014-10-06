@@ -1,12 +1,10 @@
 title: langolf.io
-email: "sasha.langolf@gmail.com"
 baseurl: ""
 url: "http://langolf.io"
+email: "sasha.langolf@gmail.com"
 twitter_username: langolf
 github_username: langolf
 permalink: pretty
 name: Александр Лангольф
 markdown: kramdown
 exclude: ["node_modules", "gulpfile.js", "package.json"]
-sass:
-  sass_dir: _sass
