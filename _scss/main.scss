@@ -58,6 +58,7 @@ a {
 
   &:hover {
     color: darken(#1879d3, 20%);
+    text-decoration: none;
   }
 }
 
@@ -145,20 +146,20 @@ h5, h6 {
   }
 }
 
-a[href*="fun-box"] {
+a[href*="badoo"] {
   display: inline-block;
   &:before {
     content: '';
-    display: inline-block;
+    display: inline-flex;
     vertical-align: middle;
     position: relative;
     top: -2px;
     margin-left: .1em;
     margin-right: .3em;
-    background: url(/img/funbox.svg) no-repeat;
+    background: url(/img/heart.svg) no-repeat;
     background-size: 100%;
     width: 20px;
-    height: 20px;
+    height: 17px;
   }
 }
 
